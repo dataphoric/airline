@@ -1,0 +1,9 @@
+{
+	"crewID": "C12345",
+	"name": "John Doe",
+	"position": "Pilot",
+	"contactInfo": "john.doe@example.com",
+	"flight": {
+		"flightID": "F123456"
+	}
+}

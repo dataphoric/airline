@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "passNo": {
+      "type": "string"
+    },
+    "boardingTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "gate": {
+      "type": "string"
+    },
+    "passengerInfo": {
+      "type": "string"
+    },
+    "passengers": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/passenger" }
+    },
+    "flight": {
+      "type": "object",
+      "properties": {
+        "flightID": {
+          "type": "string"
+        }
+      },
+      "required": ["flightID"]
+    }
+  },
+  "required": ["passNo", "boardingTime", "gate", "passengerInfo", "passengers", "flight"],
+  "definitions": {
+    "passenger": {
+      "type": "object"
+    }
+  }
+}

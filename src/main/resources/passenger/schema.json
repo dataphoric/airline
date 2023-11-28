@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "passID": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "refunds": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/refund" }
+    },
+    "bookings": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/booking" }
+    },
+    "boardingPasses": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/boardingPass" }
+    },
+    "document": {
+      "$ref": "#/definitions/document"
+    }
+  },
+  "required": ["passID", "name", "email", "phone", "address"],
+  "definitions": {
+    "refund": {
+      "type": "object"
+    },
+    "booking": {
+      "type": "object"
+    },
+    "boardingPass": {
+      "type": "object"
+    },
+    "document": {
+      "type": "object"
+    }
+  }
+}

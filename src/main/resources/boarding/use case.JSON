@@ -1,0 +1,15 @@
+{
+	"passNo": "BP123456",
+	"boardingTime": "2022-12-24T18:30:00-05:00",
+	"gate": "A12",
+	"passengerInfo": "Jane Doe",
+	"passengers": [
+		{
+			"passengers details": "passengers details"
+		}
+	],
+	"flight": {
+		"flightID": "F123456"
+	}
+}
+

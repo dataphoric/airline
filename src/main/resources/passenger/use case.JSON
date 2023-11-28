@@ -1,0 +1,26 @@
+{
+	"passID": "P123456",
+	"name": "John Doe",
+	"email": "john.doe@example.com",
+	"phone": "123-456-7890",
+	"address": "123 Main St, Anytown, AN",
+	"refunds": [
+		{
+			"Refund details": "Refund details"
+		}
+	],
+	"bookings": [
+		{
+			"Bookings details": "Bookings details"
+		}
+	],
+	"boardingPasses": [
+		{
+			"Boarding Passes details": "Boarding Passes details"
+		}
+	],
+	"document": {
+		"Document details": "Document details"
+	}
+}
+

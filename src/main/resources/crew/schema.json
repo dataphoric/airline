@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "crewID": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "contactInfo": {
+      "type": "string"
+    },
+    "flight": {
+      "type": "object",
+      "properties": {
+        "flightID": {
+          "type": "string"
+        }
+      },
+      "required": ["flightID"]
+    }
+  },
+  "required": ["crewID", "name", "position", "contactInfo", "flight"]
+}
